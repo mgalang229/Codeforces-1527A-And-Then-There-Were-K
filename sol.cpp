@@ -31,13 +31,13 @@ int main() {
 			// find the maximum number that is a power of two from 1 to 'n'
 			power_of_two = Power(2, i);
 		}
-		// if the maximum number that is power of two is equal to 'n', then
-		// the answer is simply 'n' - 1 (because the AND operation between
+		// if the maximum number that is a power of two is equal to 'n', then
+		// the answer is simply 'n' - 1 (because the AND operation between a
 		// power of two and its precedent number is always equal to 1),
-		// however, if the 'n' is not a power of two, we will use largest
+		// however, if the 'n' is not a power of two, we will use the largest
 		// number that is power of two before 'n', and subtract 1 from it
 		// which will result to the maximum number that would give 'n'
-		// a result of 1 using AND operation
+		// a result of 1 using binary AND (&) operation
 		cout << (power_of_two == n ? n - 1 : ans - 1) << '\n';
 	}
 	return 0;
